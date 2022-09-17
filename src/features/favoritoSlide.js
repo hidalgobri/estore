@@ -14,5 +14,7 @@ export default function favoritoReducer(state = initialState, action) {
             idFavs: state.idFavs.filter(fav => fav !== action.payload )
         }
     }
+    default:
+      return state
   }
 }

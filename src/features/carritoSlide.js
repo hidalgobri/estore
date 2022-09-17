@@ -1,9 +1,9 @@
-const initialState = [
-  {
-    itemId: "",
-    cantidad: 0,
-  },
-];
+// initial state
+//  {
+//   itemId: "",
+//   cantidad: 0,
+// },
+const initialState = [];
 
 export default function carritoReducer(state = initialState, action) {
   switch (action.type) {
@@ -18,6 +18,7 @@ export default function carritoReducer(state = initialState, action) {
             if (item.itemId === action.payload){
                 return {...item, cantidad: item.cantidad + 1}
             }
+            return item
         })
     }
     case "carrito/disminuirCantidad":{
@@ -25,7 +26,10 @@ export default function carritoReducer(state = initialState, action) {
             if (item.itemId === action.payload){
                 return {...item, cantidad: item.cantidad - 1}
             }
+            return item
         })
     }
+    default:
+      return state
   }
 }
