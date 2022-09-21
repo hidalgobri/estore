@@ -6,7 +6,7 @@ import itemReducer from "./features/itemSlide"
 
  const rootReducer = combineReducers(
  {
-      items: itemReducer,
+     
       carrito: carritoReducer,
       favorito: favoritoReducer
    }
