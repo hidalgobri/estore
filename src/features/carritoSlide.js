@@ -3,9 +3,9 @@
 //   itemId: "",
 //   cantidad: 0,
 // },
-const initialState = [];
 
-export default function carritoReducer(state = initialState, action) {
+
+export default function carritoReducer(state = [], action) {
   switch (action.type) {
     case "carrito/anadirItem": {
         return [ ...state, { itemId: action.payload, cantidad: 1}]
