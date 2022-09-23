@@ -1,21 +1,20 @@
-import { ItemContainer, ItemCard, ComprarButton } from "./styles/Item.styled";
+import { useSelector } from "react-redux";
+// import { ItemContainer, ItemCard, ComprarButton } from "./styles/Item.styled";
 
-export default function ItemsLista(props) {
-  const items = props.itemsLista.map((item) => {
-    return (
-      <ItemCard key={item.id}>
-        <img src ={require("../assets/"+item.img)} alt={item.nombre}/>
-        <h3>{item.nombre}</h3>
-        <h5>{`$ ${item.precio_kg}`}</h5>
-        <ComprarButton>Comprar</ComprarButton>
-      </ItemCard>
-    );
-  });
+const selectItems = state => state.item
+console.log(selectItems)
 
-  return (
-    <>
-      <h1>Items Lista</h1>
-      <ItemContainer>{items}</ItemContainer>
-    </>
-  );
+const ItemsLista = () => {
+  console.log("aquiuiii")
+  const todos = useSelector(selectItems)
+  console.log("typeof todos")
+  // since `todos` is an array, we can loop over it
+  const renderedListItems = todos.map(todo => {
+    console.log(todo)
+    return <p>{todo.id}</p>
+  })
+
+  return <ul className="todo-list">{renderedListItems}</ul>
 }
+
+export default ItemsLista
