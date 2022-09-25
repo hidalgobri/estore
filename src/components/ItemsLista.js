@@ -4,7 +4,6 @@ import AnadirButtons from "./AnadirButtons"
 
 const ItemsLista = () => {
   const items = useSelector((state) => state.item);
-  const carrito = useSelector( (state) => state.carrito)
   const dispatch = useDispatch();
 
   const renderedListItems = items.map((item) => {

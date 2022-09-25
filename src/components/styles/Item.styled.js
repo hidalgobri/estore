@@ -18,3 +18,4 @@ export const ItemCard = styled.div`
 export const ComprarButton = styled.button`
   width: 100%;
 `;
+
