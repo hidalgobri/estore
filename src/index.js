@@ -4,10 +4,10 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import store from "./store";
+
 // const unsubscribe = store.subscribe(() =>
 //   console.log("State after dispatch: ", store.getState())
 // );
-// console.log("Initial state: ", store.getState());
 
 // unsubscribe();
 

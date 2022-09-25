@@ -1,8 +1,12 @@
 import data from "../data.json"
 
-const initialState = data.items
+const dataInicial = data.items.map(item =>{
+    return { ...item, enCarrito: false}
+})
 
-export default function itemReducer(state=initialState, action){
+
+
+export default function itemReducer(state=dataInicial, action){
     switch (action.type){
         case "item/disminuirCantidad":
         {
@@ -13,6 +17,15 @@ export default function itemReducer(state=initialState, action){
                 } 
                 return item
             })
+        }
+        case "item/enCarrito":
+        {
+            return state.map( (item) =>{
+                if (item.id === action.payload){
+                    return { ...item, enCarrito: !item.enCarrito }
+                }
+                return item
+            } )
         }
         default: return state
     }
