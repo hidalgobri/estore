@@ -4,7 +4,7 @@ import Favoritos from "./components/Favoritos";
 import Carrito from "./components/Carrito";
 import { Routes, Route, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-
+import Header from "./components/Header";
 const CarritoCounter = () => {
   const carrito = useSelector((state) => state.carrito);
 
@@ -15,11 +15,7 @@ function App() {
   return (
     <>
       <h1>Hola</h1>
-      <ul>
-        <li><Link to="/">Inicio</Link></li>
-        <li><Link to="/favoritos">Favoritos</Link></li>
-        <li><Link to="/carrito">Carrito</Link></li>
-      </ul>
+      <Header></Header>
       <CarritoCounter></CarritoCounter>
       <Routes>
         <Route path="/" element={<ItemsLista />} />
