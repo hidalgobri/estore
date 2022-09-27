@@ -14,7 +14,7 @@ const ItemsLista = () => {
         <h3>{item.nombre}</h3>
         <p>$ {item.precio_kg}</p>
         {item.enCarrito ? (
-          <AnadirButtons itemId={item.id} ></AnadirButtons>
+          <AnadirButtons key= {item.id} itemId={item.id} ></AnadirButtons>
         ) : (
           <ComprarButton
             onClick={() => {
