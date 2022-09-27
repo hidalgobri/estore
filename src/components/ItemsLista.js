@@ -7,6 +7,7 @@ const ItemsLista = () => {
   const dispatch = useDispatch();
 
   const renderedListItems = items.map((item) => {
+    
     return (
       <ItemCard key={item.id}>
         <img src={require("../assets/" + item.img)}></img>
@@ -18,7 +19,7 @@ const ItemsLista = () => {
           <ComprarButton
             onClick={() => {
               dispatch({ type: "item/enCarrito", payload: item.id });
-              dispatch({ type: "carrito/anadirItem", payload: item.id });
+              dispatch({ type: "carrito/anadirItem", payload: item });
             }}
           >
             Comprar

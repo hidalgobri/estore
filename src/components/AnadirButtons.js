@@ -13,7 +13,7 @@ const AnadirButtons= (props) => {
             <button onClick={
                 () => {
                     dispatch({type:'item/enCarrito', payload:props.itemId  }) 
-                    dispatch({type: 'carrito/disminuirCantidad', payload:props.itemId })
+                    dispatch({type: 'carrito/eliminarItem', payload:props.itemId })
                 }
             }> eliminar </button> 
             :
