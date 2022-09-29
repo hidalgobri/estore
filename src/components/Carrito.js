@@ -13,7 +13,7 @@ const Carrito = () => {
         <CardDescription>
           <div>
             <h3>{item.nombre}</h3>
-            <h3>$ {item.precio}</h3>
+            <p>$ {item.precio}</p>
           </div>
           <img src={require("../assets/" + item.img)} />
         </CardDescription>

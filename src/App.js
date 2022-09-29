@@ -14,7 +14,6 @@ const CarritoCounter = () => {
 function App() {
   return (
     <>
-      <h1>Hola</h1>
       <Header></Header>
       <CarritoCounter></CarritoCounter>
       <Routes>

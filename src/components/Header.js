@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { HeaderStyle } from "./styles/Header.styled";
 
+
 const Header = () => {
   return (
     <HeaderStyle>
@@ -13,7 +14,7 @@ const Header = () => {
           <Link to="/favoritos">Favoritos</Link>
         </li>
         <li>
-          <Link to="/carrito">Mi Carrito</Link>
+          <Link to="/carrito">Mi Carrito </Link>
         </li>
       </ul>
     </HeaderStyle>
