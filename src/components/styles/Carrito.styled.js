@@ -1,14 +1,19 @@
 import styled from "styled-components";
 
-export const CardContainer = styled.div`
+export const CarritoContainer = styled.div`
+  padding-top: 7rem;
+  padding: 7rem 1rem 0 1rem;
+`
+
+export const CarritoCard = styled.div`
   display: flex;
   justify-content: space-between;
   background-color: white;
-  margin: 0 1rem 1rem 1rem;
-  padding: 0 1rem;
+  margin-bottom: 1rem ;
+
 `;
 
-export const CardDescription = styled.div`
+export const CarritoDescription = styled.div`
   display: grid;
   align-items: center;
   justify-items: center;

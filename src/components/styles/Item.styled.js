@@ -5,7 +5,7 @@ export const ItemContainer = styled.div`
   grid-template-columns: repeat(4, auto);
   gap: 1.5rem;
   margin: 0rem 1rem;
-  
+  padding-top: 7rem;
 
 `;
 export const ItemCard = styled.div`
@@ -14,8 +14,6 @@ export const ItemCard = styled.div`
     align-items: center;
     padding: 1rem;
     background-color: white;
-   
-    
 
   img {
     width: 15rem;

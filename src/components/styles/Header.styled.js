@@ -6,7 +6,8 @@ export const HeaderStyle = styled.header`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
+    position: fixed;
+    width: 100%;
 
     ul{
         display: flex;
@@ -15,6 +16,15 @@ export const HeaderStyle = styled.header`
     
     li {
         list-style: none;
+        padding-right: 1.5rem;
+    }
+    h1{
+        padding-left: 1.5rem;
     }
 
+`
+
+export const MiCarritoHeader = styled.p`
+    margin: 0rem;
+    paddin: 0rem;
 `

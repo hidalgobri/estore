@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { SubtotalContainer } from "./styles/Subtotal.styled";
 
 const Subtotal = () => {
   const carritoItems = useSelector((state) => state.carrito);
@@ -7,10 +8,10 @@ const Subtotal = () => {
   }).reduce( (anterior, actual) => anterior + actual, 0)
 
   return (
-    <>
+    <SubtotalContainer>
       <h2>Subtotal</h2>
-      <p>$ {obtenerSubtotal}</p>
-    </>
+      <h3>$ {obtenerSubtotal}</h3>
+    </SubtotalContainer>
   );
 };
 

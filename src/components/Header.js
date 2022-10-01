@@ -1,6 +1,20 @@
 import { Link } from "react-router-dom";
-import { HeaderStyle } from "./styles/Header.styled";
+import { HeaderStyle, MiCarritoHeader } from "./styles/Header.styled";
+import { useSelector } from "react-redux";
 
+const CarritoCounter = () => {
+  const carrito = useSelector((state) => state.carrito)
+  const totalItems = carrito.map(item => item.cantidad)
+    .reduce((anterior, actual) => anterior + actual,0)
+
+  return <MiCarritoHeader>Mi carrito { 
+                    carrito.length === 0 
+                    ?
+                    "" 
+                    :
+                    `( ${totalItems} )`
+                  }</MiCarritoHeader>;
+};
 
 const Header = () => {
   return (
@@ -14,7 +28,7 @@ const Header = () => {
           <Link to="/favoritos">Favoritos</Link>
         </li>
         <li>
-          <Link to="/carrito">Mi Carrito </Link>
+          <Link to="/carrito"><CarritoCounter/></Link>
         </li>
       </ul>
     </HeaderStyle>

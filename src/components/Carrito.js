@@ -1,30 +1,37 @@
 import { useSelector } from "react-redux";
-import { CardContainer, CardDescription } from "./styles/Carrito.styled";
+import {
+  CarritoCard,
+  CarritoDescription,
+  CarritoContainer,
+} from "./styles/Carrito.styled";
 import AnadirButtons from "./AnadirButtons";
 import Subtotal from "./Subtotal";
 
 const Carrito = () => {
   const carritoItems = useSelector((state) => state.carrito);
-  console.log(carritoItems);
+
   const carritoItemsRender = carritoItems.map((item) => {
+    console.log(item);
     return (
-      <CardContainer key={item.itemId}>
+      <CarritoCard key={item.itemId}>
         <AnadirButtons itemId={item.itemId} />
-        <CardDescription>
+        <CarritoDescription>
           <div>
             <h3>{item.nombre}</h3>
             <p>$ {item.precio}</p>
           </div>
           <img src={require("../assets/" + item.img)} />
-        </CardDescription>
-      </CardContainer>
+        </CarritoDescription>
+      </CarritoCard>
     );
   });
 
   return (
     <>
-      {carritoItemsRender}
-      <Subtotal />
+      <CarritoContainer>
+        {carritoItemsRender}
+        <Subtotal />
+      </CarritoContainer>
     </>
   );
 };

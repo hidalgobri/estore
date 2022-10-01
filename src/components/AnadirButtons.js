@@ -10,21 +10,26 @@ const AnadirButtons= (props) => {
     return <AnadirButtonsContainer>
         { itemSelected.cantidad === 1 
             ? 
-            <button onClick={
+            <button 
+                className="eliminarButton"
+                onClick={
                 () => {
                     dispatch({type:'item/enCarrito', payload:props.itemId  }) 
                     dispatch({type: 'carrito/eliminarItem', payload:props.itemId })
                 }
             }> eliminar </button> 
             :
-            <button onClick={  
+            <button 
+                className="menosButton"
+                onClick={  
                     () => { dispatch({type: 'carrito/disminuirCantidad', payload:props.itemId })}
                 }
             > - </button>
         }
         
         <h3>{itemSelected.cantidad}</h3>
-        <button 
+        <button
+            className="masButton" 
             onClick={ ()=>{ dispatch({type: 'carrito/aumentarCantidad', payload:props.itemId })}
             }> + </button>
     </AnadirButtonsContainer>

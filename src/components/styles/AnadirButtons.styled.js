@@ -14,4 +14,8 @@ export const AnadirButtonsContainer = styled.div`
     cursor: pointer;
     font-size: 1rem;
   }
+  .masButton{
+    background-color: #FF69B4;
+  }
+
 `;
