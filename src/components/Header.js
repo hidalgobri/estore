@@ -1,19 +1,35 @@
-import { Link } from "react-router-dom";
-import { HeaderStyle, MiCarritoHeader } from "./styles/Header.styled";
+import { NavLink } from "react-router-dom";
+import { HeaderStyle, OpcionesHeader } from "./styles/Header.styled";
 import { useSelector } from "react-redux";
+
+const FavoritosCounter = () =>{
+  const totalFavoritos = useSelector((state) => state.favorito.length)
+
+  return <OpcionesHeader>
+    Favorito
+    {
+      totalFavoritos === 0
+      ?
+      ""
+      :
+      ` ( ${totalFavoritos} )`
+    }
+  </OpcionesHeader>
+}
 
 const CarritoCounter = () => {
   const carrito = useSelector((state) => state.carrito)
-  const totalItems = carrito.map(item => item.cantidad)
-    .reduce((anterior, actual) => anterior + actual,0)
 
-  return <MiCarritoHeader>Mi carrito { 
+  const totalItems = carrito.map(item => item.cantidad)
+  .reduce((anterior, actual) => anterior + actual,0)
+
+  return <OpcionesHeader>Mi carrito { 
                     carrito.length === 0 
                     ?
                     "" 
                     :
                     `( ${totalItems} )`
-                  }</MiCarritoHeader>;
+                  }</OpcionesHeader>;
 };
 
 const Header = () => {
@@ -22,13 +38,13 @@ const Header = () => {
         <h1>Super tienda React!</h1>
       <ul>
         <li>
-          <Link to="/">Inicio</Link>
+          <NavLink style={({isActive}) => { return isActive ? {color: "white"} : {} }} to="/">Inicio</NavLink>
         </li>
         <li>
-          <Link to="/favoritos">Favoritos</Link>
+          <NavLink style={({isActive}) => { return isActive ? {color: "white"} : {} }} to="/favoritos"><FavoritosCounter/></NavLink>
         </li>
         <li>
-          <Link to="/carrito"><CarritoCounter/></Link>
+          <NavLink style={({isActive}) => { return isActive ? {color: "white"} : {} }} to="/carrito"><CarritoCounter/></NavLink>
         </li>
       </ul>
     </HeaderStyle>

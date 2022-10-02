@@ -10,6 +10,8 @@ export const HeaderStyle = styled.header`
     width: 100%;
     z-index: 99;
 
+    
+
     ul{
         display: flex;
         gap: 1rem;
@@ -18,6 +20,8 @@ export const HeaderStyle = styled.header`
     li {
         list-style: none;
         padding-right: 1.5rem;
+        font-size: 1.2rem;
+        color: black;
     }
     h1{
         padding-left: 1.5rem;
@@ -25,7 +29,7 @@ export const HeaderStyle = styled.header`
 
 `
 
-export const MiCarritoHeader = styled.p`
+export const OpcionesHeader = styled.p`
     margin: 0rem;
     paddin: 0rem;
 `

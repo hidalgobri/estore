@@ -16,18 +16,21 @@ const ItemsLista = () => {
           <img
             className="corazon"
             onClick={() => {
-              dispatch({ type: "favorito/anadirFavorito", payload: item.id });
-              dispatch({ type: "item/esFavorito", payload: item.id });
-            }}
-            src={heartFillSVG}
-          ></img>
-        ) : (
-          <img className="corazon" 
-            onClick={() => {
               dispatch({ type: "favorito/eliminarFavorito", payload: item.id });
               dispatch({ type: "item/esFavorito", payload: item.id });
             }}
-            src={heartSVG}></img>
+            src={heartFillSVG}
+            alt="favorito"
+            ></img>
+            ) : (
+              <img className="corazon" 
+              onClick={() => {
+                dispatch({ type: "favorito/anadirFavorito", payload: item });
+                dispatch({ type: "item/esFavorito", payload: item.id });
+            }}
+            src={heartSVG}
+            alt="favorito"
+            ></img>
         )}
         <img
           className="itemImg"

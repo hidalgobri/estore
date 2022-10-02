@@ -7,6 +7,10 @@ export const ItemContainer = styled.div`
   margin: 0rem 1rem;
   padding-top: 7rem;
 
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(3, auto);
+  }
+
 `;
 export const ItemCard = styled.div`
     display:flex;

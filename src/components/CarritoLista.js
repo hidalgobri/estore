@@ -9,6 +9,7 @@ import Subtotal from "./Subtotal";
 
 const Carrito = () => {
   const carritoItems = useSelector((state) => state.carrito);
+  console.log(carritoItems)
 
   const carritoItemsRender = carritoItems.map((item) => {
     console.log(item);
@@ -20,7 +21,7 @@ const Carrito = () => {
             <h3>{item.nombre}</h3>
             <p>$ {item.precio}</p>
           </div>
-          <img src={require("../assets/" + item.img)} />
+          <img src={require("../assets/" + item.img)} alt={item.nombre} />
         </CarritoDescription>
       </CarritoCard>
     );
