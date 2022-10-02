@@ -15,13 +15,19 @@ export const ItemCard = styled.div`
     padding: 1rem;
     background-color: white;
 
-  img {
+  .itemImg {
     width: 15rem;
     height: 10rem;
   }
 
   h3{
     margin: 0;
+  }
+
+  .corazon {
+    margin-left: auto;
+    width: 10%;
+    fill: yellow;
   }
 `;
 

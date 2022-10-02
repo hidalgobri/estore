@@ -8,6 +8,7 @@ export const HeaderStyle = styled.header`
     justify-content: space-between;
     position: fixed;
     width: 100%;
+    z-index: 99;
 
     ul{
         display: flex;
