@@ -8,8 +8,14 @@ export const ItemContainer = styled.div`
   padding-top: 7rem;
 
 
+
   @media (max-width: 768px) {
     grid-template-columns: repeat(3, auto);
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(1, auto);
+    padding-top: 9rem;
   }
 
 `;
@@ -24,16 +30,29 @@ export const ItemCard = styled.div`
   .itemImg {
     width: 15rem;
     height: 10rem;
+
   }
 
   h3{
     margin: 0;
   }
+  h3, p{
+    cursor: default;
+  }
 
   .corazon {
     margin-left: auto;
     width: 10%;
-    fill: yellow;
+    cursor: pointer;
+  }
+
+  @media (max-width: 576px) {
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+    .corazon {
+      width: 9%;
+    }
   }
 `;
 
@@ -44,5 +63,6 @@ export const ComprarButton = styled.button`
   margin-top:0.5rem;
   background-color: #FF69B4;
   border: none;
+  cursor: pointer;
 `;
 

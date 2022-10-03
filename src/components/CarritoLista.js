@@ -2,7 +2,8 @@ import { useSelector } from "react-redux";
 import {
   CarritoCard,
   CarritoDescription,
-  CarritoContainer,
+  CarritoListContainer,
+  CarritoContainer
 } from "./styles/Carrito.styled";
 import AnadirButtons from "./AnadirButtons";
 import Subtotal from "./Subtotal";
@@ -13,7 +14,6 @@ const Carrito = () => {
   console.log(carritoItems)
 
   const carritoItemsRender = carritoItems.map((item) => {
-    console.log(item);
     return (
       <CarritoCard key={item.itemId}>
         <AnadirButtons itemId={item.itemId} />
@@ -29,8 +29,9 @@ const Carrito = () => {
   });
 
   return (
-    <>
-      <CarritoContainer>
+    <CarritoContainer>
+      <Subtotal />  
+      <CarritoListContainer>
         {
           carritoItems.length === 0 
           ?
@@ -38,10 +39,9 @@ const Carrito = () => {
           :
           carritoItemsRender
         }
-        <Subtotal />
-      </CarritoContainer>
+      </CarritoListContainer>
      
-    </>
+    </CarritoContainer>
   );
 };
 

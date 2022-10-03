@@ -6,7 +6,7 @@ const FavoritosCounter = () =>{
   const totalFavoritos = useSelector((state) => state.favorito.length)
 
   return <OpcionesHeader>
-    Favorito
+    Favoritos
     {
       totalFavoritos === 0
       ?

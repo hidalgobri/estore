@@ -10,7 +10,7 @@ const Subtotal = () => {
   return (
     <SubtotalContainer>
       <h2>Subtotal</h2>
-      <h3>$ {obtenerSubtotal}</h3>
+      <h2>$ {obtenerSubtotal}</h2>
     </SubtotalContainer>
   );
 };

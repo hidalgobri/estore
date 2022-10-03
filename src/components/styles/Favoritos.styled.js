@@ -22,6 +22,10 @@ export const FavoritosCard = styled.div`
     cursor: pointer;
     font-size: 1rem;
   }
+
+  p{
+    cursor: default;
+  }
 `;
 
 export const FavoritosContainer = styled.div`
@@ -33,5 +37,9 @@ export const FavoritosContainer = styled.div`
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(3, auto);
+  }
+  @media (max-width: 576px) {
+    padding-top: 9rem;
+    grid-template-columns: repeat(2, auto);
   }
 `;
