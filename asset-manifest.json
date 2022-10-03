@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/estore/static/js/main.a618be8e.js",
+    "static/media/arveja.jpg": "/estore/static/media/arveja.8e8018f7397f1132afe9.jpg",
+    "static/media/zanahoria.jpg": "/estore/static/media/zanahoria.bce7fca2dd512c3fa4cb.jpg",
+    "static/media/maiz.jpg": "/estore/static/media/maiz.d98b09dd5f96f4896795.jpg",
+    "static/media/kiwi.jpg": "/estore/static/media/kiwi.cf35d853b4e200544d5b.jpg",
+    "static/media/frejol.jpg": "/estore/static/media/frejol.5e9bccbd60a63bc74b25.jpg",
+    "static/media/frutilla.jpg": "/estore/static/media/frutilla.cf7c70d8a030de86700b.jpg",
+    "static/media/cebolla.jpg": "/estore/static/media/cebolla.f275b4bb56ef0894b93c.jpg",
+    "static/media/brocoli.jpg": "/estore/static/media/brocoli.9eaf1204d2f83dd0a5ae.jpg",
+    "static/media/banana.jpg": "/estore/static/media/banana.a824d874c7498c43596e.jpg",
+    "static/media/tomate.jpg": "/estore/static/media/tomate.765a5aabb89d3457f885.jpg",
+    "static/media/heart.svg": "/estore/static/media/heart.8a2be39f574a429da043a718962777f9.svg",
+    "static/media/fill-heart.svg": "/estore/static/media/fill-heart.ebd3fae9ac623b909e47146bb037e44b.svg",
+    "index.html": "/estore/index.html",
+    "main.a618be8e.js.map": "/estore/static/js/main.a618be8e.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.a618be8e.js"
+  ]
+}
