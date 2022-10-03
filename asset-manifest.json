@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/estore/static/js/main.a618be8e.js",
+    "main.js": "/estore/static/js/main.f47054f8.js",
     "static/media/arveja.jpg": "/estore/static/media/arveja.8e8018f7397f1132afe9.jpg",
     "static/media/zanahoria.jpg": "/estore/static/media/zanahoria.bce7fca2dd512c3fa4cb.jpg",
     "static/media/maiz.jpg": "/estore/static/media/maiz.d98b09dd5f96f4896795.jpg",
@@ -14,9 +14,9 @@
     "static/media/heart.svg": "/estore/static/media/heart.8a2be39f574a429da043a718962777f9.svg",
     "static/media/fill-heart.svg": "/estore/static/media/fill-heart.ebd3fae9ac623b909e47146bb037e44b.svg",
     "index.html": "/estore/index.html",
-    "main.a618be8e.js.map": "/estore/static/js/main.a618be8e.js.map"
+    "main.f47054f8.js.map": "/estore/static/js/main.f47054f8.js.map"
   },
   "entrypoints": [
-    "static/js/main.a618be8e.js"
+    "static/js/main.f47054f8.js"
   ]
 }
