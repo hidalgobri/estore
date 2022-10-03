@@ -15,8 +15,9 @@ function App() {
         <Route path="/" element={<ItemsLista />} />
         <Route path="/favoritos" element={<FavoritosLista />} />
         <Route path="/carrito" element={<CarritoLista />} />
+        <Route path="*" element={<ItemsLista />}/>
       </Routes>
-      <Footer/>
+  
     </>
   );
 }
