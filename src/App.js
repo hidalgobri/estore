@@ -4,6 +4,7 @@ import FavoritosLista from "./components/FavoritosLista";
 import CarritoLista from "./components/CarritoLista";
 import { Routes, Route, Link } from "react-router-dom";
 import Header from "./components/Header";
+import Footer from "./components/Footer"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/favoritos" element={<FavoritosLista />} />
         <Route path="/carrito" element={<CarritoLista />} />
       </Routes>
+      <Footer/>
     </>
   );
 }

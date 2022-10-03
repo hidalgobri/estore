@@ -7,6 +7,7 @@ import {
 import AnadirButtons from "./AnadirButtons";
 import Subtotal from "./Subtotal";
 
+
 const Carrito = () => {
   const carritoItems = useSelector((state) => state.carrito);
   console.log(carritoItems)
@@ -30,9 +31,16 @@ const Carrito = () => {
   return (
     <>
       <CarritoContainer>
-        {carritoItemsRender}
+        {
+          carritoItems.length === 0 
+          ?
+          <h2>¡Sin productos en el carrito!</h2>
+          :
+          carritoItemsRender
+        }
         <Subtotal />
       </CarritoContainer>
+     
     </>
   );
 };

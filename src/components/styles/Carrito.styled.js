@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const CarritoContainer = styled.div`
   padding: 7rem 1rem 0 1rem;
+  
 `
 
 export const CarritoCard = styled.div`
@@ -9,7 +10,8 @@ export const CarritoCard = styled.div`
   justify-content: space-between;
   background-color: white;
   margin-bottom: 1rem ;
-  padding: 1rem;
+  padding: 0 1rem;
+  box-shadow: 0px 3px 5px 0px rgb(216 191 216);
 `;
 
 export const CarritoDescription = styled.div`

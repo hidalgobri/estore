@@ -1,7 +1,8 @@
 import styled from "styled-components"
 
 export const HeaderStyle = styled.header`
-    background-color: #D8BFD8;
+    background-color: #FFF5FC;
+    box-shadow: 0px 3px 5px 0px rgb(216 191 216);
     display: flex;
     flex-direction: row;
     align-items: center;

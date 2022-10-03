@@ -7,6 +7,7 @@ export const ItemContainer = styled.div`
   margin: 0rem 1rem;
   padding-top: 7rem;
 
+
   @media (max-width: 768px) {
     grid-template-columns: repeat(3, auto);
   }
@@ -18,6 +19,7 @@ export const ItemCard = styled.div`
     align-items: center;
     padding: 1rem;
     background-color: white;
+    box-shadow: 0px 3px 5px 0px rgb(216 191 216);
 
   .itemImg {
     width: 15rem;

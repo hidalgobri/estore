@@ -4,6 +4,7 @@ import AnadirButtons from "./AnadirButtons";
 import heartSVG from "../assets/heart.svg";
 import heartFillSVG from "../assets/fill-heart.svg";
 
+
 const ItemsLista = () => {
   const items = useSelector((state) => state.item);
   const dispatch = useDispatch();
@@ -55,7 +56,11 @@ const ItemsLista = () => {
     );
   });
 
-  return <ItemContainer> {renderedListItems} </ItemContainer>;
+  return <>
+    <ItemContainer> {renderedListItems} </ItemContainer>
+
+  </>
+  ;
 };
 
 export default ItemsLista;

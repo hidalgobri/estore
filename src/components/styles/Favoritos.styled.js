@@ -6,6 +6,8 @@ export const FavoritosCard = styled.div`
   background-color: white;
   padding: 1rem;
   align-items: center;
+  box-shadow: 0px 3px 5px 0px rgb(216 191 216);
+  
 
   img {
     width: 8rem;
@@ -27,6 +29,7 @@ export const FavoritosContainer = styled.div`
   grid-template-columns: repeat(5, auto);
   padding: 7rem 1rem 0 1rem;
   gap: 1.5rem;
+  height: 100%;
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(3, auto);

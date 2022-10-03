@@ -38,13 +38,13 @@ const Header = () => {
         <h1>Super tienda React!</h1>
       <ul>
         <li>
-          <NavLink style={({isActive}) => { return isActive ? {color: "white"} : {} }} to="/">Inicio</NavLink>
+          <NavLink style={({isActive}) => { return isActive ? {color: "#FF69B4"} : {} }} to="/">Inicio</NavLink>
         </li>
         <li>
-          <NavLink style={({isActive}) => { return isActive ? {color: "white"} : {} }} to="/favoritos"><FavoritosCounter/></NavLink>
+          <NavLink style={({isActive}) => { return isActive ? {color: "#FF69B4"} : {} }} to="/favoritos"><FavoritosCounter/></NavLink>
         </li>
         <li>
-          <NavLink style={({isActive}) => { return isActive ? {color: "white"} : {} }} to="/carrito"><CarritoCounter/></NavLink>
+          <NavLink style={({isActive}) => { return isActive ? {color: "#FF69B4"} : {} }} to="/carrito"><CarritoCounter/></NavLink>
         </li>
       </ul>
     </HeaderStyle>
